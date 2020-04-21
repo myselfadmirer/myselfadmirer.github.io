@@ -1,0 +1,434 @@
+/*Стиль по умолчаию для всего документа*/
+body {
+    background-color: #f8f8f8;
+}
+
+.container {
+    width: 900px;
+    text-align: left;
+    font-family: "Times New Roman";
+    margin: 0 auto;
+}
+
+/*Стиль заголовков h1*/
+h1 {
+    color: darkgreen;
+    font-size: 30px;
+    font-style: italic;
+    padding-left: 30px;
+    text-align: center;
+}
+
+#contacts,
+#registration,
+#cart,
+#good {
+    text-align: left;
+}
+
+/*Главная сстраница*/
+img[alt="girl.jpg"] {
+    display: block;
+    float: left;
+    margin: 0px 30px 0px 30px;
+}
+
+.greeting p {
+    display: inline-block;
+    margin: 50px 30px 0px 30px;
+    font-size: 30px;
+}
+
+.greeting {
+    width: inherit;
+    height: 400;
+    color: darkgreen;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    margin: 20px 0px 30px 0px;
+}
+
+/*Меню*/
+.header {
+    height: 90px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.menu {
+    width: 650px;
+    padding-left: 20px;
+    display: inline-flex;
+    justify-content: space-around;
+}
+
+.header p {
+    margin-bottom: 0px;
+    float: left;
+}
+
+.header p a:any-link {
+    text-decoration: none;
+    font-size: 15px;
+    color: darkgreen;
+    padding-left: 25px;
+    line-height: 0px;
+}
+
+.header a span {
+    padding-left: 40px;
+}
+
+.header p a span sup {
+    font-size: 10px;
+    font-weight: 500;
+}
+
+.menu li a:any-link {
+    text-decoration: none;
+    color: darkolivegreen;
+    font-size: 20px;
+    font-family: cursive;
+}
+
+.menu li a:hover {
+    text-decoration: none;
+    color: gold;
+}
+
+.menu li a:hover:before {
+    content: url("../img/Grasstip.png");
+}
+
+.menu li a:hover:after {
+    content: url("../img/Grasstip.png");
+}
+
+.menu li {
+    list-style-type: none;
+}
+
+/*Каталог*/
+.catalog {
+    margin: 0px 30px 10px 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.goodblok {
+    display: inline-block;
+    width: 250px;
+    height: 300px;
+    border: 1px solid darkolivegreen;
+    border-radius: 20px;
+    text-align: center;
+    margin: 10px;
+    background-color: white;
+}
+
+.goodblok a {
+    display: table-cell;
+    width: inherit;
+    height: inherit;
+    vertical-align: middle;
+}
+
+.goodblok:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.goodblok a:hover {
+    text-decoration: none;
+}
+
+.goodblok a span {
+    text-align: center;
+    font-size: 20px;
+    color: darkolivegreen;
+}
+
+/*Товары*/
+/*Стиль заголовков характеристик товара*/
+h3 {
+    color: #000;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+    padding-left: 30px;
+}
+
+/*Стиль характеристик товара*/
+.source {
+    color: #000;
+    font-size: 16px;
+    font-weight: 400;
+    padding-left: 30px;
+}
+
+.description li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    color: darkgreen;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.use {
+    list-style-type: "*  ";
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+    text-align: left;
+}
+
+.description li {
+    background-image: url("../img/tip.png");
+    background-repeat: no-repeat;
+    padding-left: 20px;
+}
+
+.feature,
+.tablefeature,
+.choose {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 30px;
+}
+
+.nextlink {
+    padding-left: 30px;
+}
+
+.use li::first-letter,
+.description li::first-letter,
+.source::first-letter {
+    color: darkgoldenrod;
+    font-size: 20px;
+}
+
+input[value="Добавить в корзину"] {
+    margin: 0px 0px 20px 20px;
+    width: 160px;
+    height: 35px;
+    cursor: pointer;
+}
+
+select {
+    width: 80px;
+    height: 35px;
+    font: 18px darkgreen;
+    background-color: inherit;
+    cursor: pointer;
+    float: left;
+}
+
+input[value="Добавить в корзину"]:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/*Таблица на странице товара*/
+.tablefeature {
+    text-align: center;
+    vertical-align: middle;
+    margin: 20px 30px 20px 0px;
+    border-spacing: 0px 0px;
+}
+
+.tablefeature td {
+    height: 35px;
+    width: 83px;
+    border: 1px solid darkgreen;
+
+}
+
+.tablefeature tr:first-child td:first-child {
+    border-top-left-radius: 8px;
+}
+
+.tablefeature tr:last-child td:first-child {
+    border-bottom-left-radius: 8px;
+}
+
+.tablefeature tr:last-child td:last-child {
+    border-bottom-right-radius: 8px;
+}
+
+.tablefeature tr:first-child td:last-child {
+    border-top-right-radius: 8px;
+}
+
+a:hover img[alt="product"] {
+    outline: 1px solid green;
+}
+
+.picture {
+    margin: 10px 0px 20px 30px;
+    float: left;
+}
+
+.description {
+    clear: both
+}
+
+#floatpic {
+    overflow: hidden;
+    margin-top: -8px;
+}
+
+/*Стиль линков по умолчанию*/
+a {
+    text-decoration: none;
+    color: darkgreen;
+    font-family: "Times New Roman";
+    font-size: 15px;
+    line-height: 25px;
+}
+
+a:hover {
+    color: greenyellow;
+    text-decoration: underline
+}
+
+a:visited {
+    color: lightseagreen;
+}
+
+/*Значения для полей ввода*/
+input,
+textarea {
+    font-style: italic;
+    font-size: 14px;
+    line-height: 25px;
+}
+
+legend {
+    font-style: italic;
+    font-size: 20px;
+}
+
+input,
+textarea,
+select {
+    border: 3px double green;
+    text-align: center;
+    margin-bottom: 10px
+}
+
+input[type="email"]:focus,
+input[type="text"]:focus {
+    color: chocolate;
+    background-color: lightgray;
+}
+
+textarea,
+input[type="text"] {
+    text-transform: capitalize;
+}
+
+textarea,
+input[type="email"],
+input[type="text"],
+input[type="submit"],
+input[type="reset"],
+input[type="password"],
+select {
+    border-radius: 10px;
+}
+
+/*Контакты*/
+input[type="submit"],
+input[type="reset"] {
+    cursor: pointer;
+}
+
+.contacts {
+    color: darkgreen;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    margin-left: 30px;
+}
+
+input[type="file"] {
+    border: none;
+}
+
+.mainfieldset {
+    width: 0px;
+    text-align: center;
+    margin-left: 30px;
+    color: darkgreen;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+iframe {
+    width: 100%;
+    height: 374px;
+}
+
+/*Регистрация*/
+.input {
+    color: darkgreen;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: left;
+}
+
+.input ul {
+    list-style-type: none;
+    margin: 5px 0px 10px 5px;
+    padding-left: 0px;
+}
+
+#reg {
+    width: 295px;
+}
+
+/*footer*/
+.footer {
+    color: white;
+    width: inherit;
+    height: 25px;
+    background-color: darkolivegreen;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    opacity: 70%;
+}
+
+footer {
+    text-align: right;
+    padding-right: 10px;
+}
+
+/*Корзина*/
+.cart {
+    font-style: italic;
+    font-size: 18px;
+    color: darkgreen;
+    text-align: center;
+    vertical-align: middle;
+    margin: 10px 10px 30px 30px;
+    border-collapse: collapse;
+}
+
+.cart td {
+    height: 50px;
+    width: 130px;
+    border: 1px solid darkgreen;
+}
+
+thead {
+    font-weight: 600;
+}
