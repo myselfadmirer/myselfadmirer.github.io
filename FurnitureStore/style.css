@@ -537,6 +537,7 @@ img[alt="product"] {
 /*Стиль футера*/
 
 .footer-page {
+    width: 1366px;
     position: relative;
     height: 384px;
     background-color: #f7f7f7;

@@ -97,7 +97,7 @@ html {
         float: left;
         text-align: center;
         padding-bottom: 60px;
-        
+
         img[alt="point"] {
             margin-top: 45px;
             margin-bottom: 30px;
@@ -117,12 +117,14 @@ html {
             font-weight: 700;
             line-height: 20px;
         }
+
         .contact-inf-text {
             color: @fontcolor;
             ont-size: 14px;
             font-weight: 700;
             margin-bottom: 12px;
         }
+
         .contact-inf-adress {
             font-weight: 300;
             color: #6c6c6c;
@@ -306,39 +308,13 @@ html {
     letter-spacing: 0.6px;
 }
 
+@media screen and (max-width: 1366px) {
 
-@media screen and (max-width: 980px) {
-    .menu-list {
-        clear: both;
-        margin-bottom: 10px;
-        margin-top: 5px;
+    .contact-block:first-child,
+    .contact-block:nth-child(2) {
+        margin-right: 21px;
+        margin-bottom: 21px;
     }
-
-    .logo {
-        display: block;
-        margin-bottom: 20px;
-    }
-
-    .menu {
-        float: left;
-    }
-
-    .product-header {
-        height: @maxheaderheight;
-    }
-}
-
-@media screen and (max-width: 900px) {
-
-    .interior-h2 {
-        font-size: 50px;
-    }
-
-    .padding-site {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
 }
 
 @media screen and (max-width: 1300px) {
@@ -416,6 +392,41 @@ html {
         clear: both;
         float: left;
         margin-bottom: 5px;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+    .menu-list {
+        clear: both;
+        margin-bottom: 10px;
+        margin-top: 5px;
+    }
+
+    .logo {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    .menu {
+        float: left;
+    }
+
+    .product-header {
+        height: @maxheaderheight;
+    }
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .interior-h2 {
+        font-size: 50px;
+    }
+
+    .padding-site {
+        padding-left: 50px;
+        padding-right: 50px;
     }
 
 }
